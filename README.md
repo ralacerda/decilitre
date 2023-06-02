@@ -1,4 +1,4 @@
-# Decilitre CSS Framework
+# Decilitre CSS Framework (Work In Progress)
 
 Decilitre is CSS stylesheet that aims to strike a balance between a lightweight CSS framework and a CSS normalizer, providing good defaults, normalization and opt-in utility classes. It aims to speed up development by offering a set of common styles that you would most likely end up writing anyway.
 
