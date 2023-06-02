@@ -1,0 +1,21 @@
+{
+  "name": "decilitre",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "build": "sass src/decilitre.scss dist/decilitre.css",
+    "dev:sass": "sass --watch src/decilitre.scss dist/decilitre.css",
+    "dev:vite": "vite",
+    "dev": "concurrently --names \"sass,vite\" -c \"yellow.bold,magenta.bold\" \"pnpm dev:sass\" \"pnpm dev:vite\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.62.1",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0"
+  }
+}

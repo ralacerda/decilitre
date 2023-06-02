@@ -1,0 +1,12 @@
+// Image
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+:where(img, picture) {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:where(svg:not([fill])) {
+  fill: currentColor;
+}

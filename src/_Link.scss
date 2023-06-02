@@ -1,0 +1,18 @@
+// Link
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+:where(a) {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-within {
+    outline: 1px solid $color-primary;
+    outline-offset: 2px;
+    border-radius: 0.2em;
+  }
+}

@@ -1,0 +1,23 @@
+// Code
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+:where(code) {
+  background: $color-details-bg;
+  border-radius: 0.4em;
+  margin: 0 0.2em;
+  padding: 0.2em 0.5em;
+  white-space: nowrap;
+}
+
+:where(pre) {
+  background: $color-details-bg;
+  border-left: 0.3em solid $color-primary;
+  overflow-y: hidden;
+
+  :where(& > code) {
+    border-radius: 0;
+    display: block;
+    padding: 1em 1.5em;
+    white-space: pre;
+  }
+}

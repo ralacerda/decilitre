@@ -1,0 +1,20 @@
+// Table
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+:where(table) {
+  border-spacing: 0;
+  overflow-x: auto;
+  text-align: left;
+}
+
+:where(td, th) {
+  border-bottom: 1px solid $color-details-fg;
+  padding: 1em;
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}

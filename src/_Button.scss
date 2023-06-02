@@ -1,0 +1,27 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+button,
+input[type="button"],
+input[type="reset"],
+in put[type="submit"] {
+  :where(&) {
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    font: inherit;
+  }
+
+  :where(&:focus) {
+    outline: none;
+  }
+
+  :where(&:focus-visible) {
+    outline: 1px solid $color-primary;
+    outline-offset: 1px;
+  }
+
+  :where(&[disabled]) {
+    cursor: default;
+  }
+}
