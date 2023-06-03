@@ -9,14 +9,6 @@ Decilitre is CSS stylesheet that aims to strike a balance between a lightweight 
 - **Few Opt-in Components**: Decilitre focuses on providing a minimal set of opt-in components, allowing you to choose which components to include in your project and reducing unnecessary bloat.
 - **Minimal and Non-Intrusive**: Decilitre strives to get out of your way as soon as possible. It uses low specificity selectors so you don't have to worry about it.
 
-## Getting Started
-
-To use Decilitre in your project, follow these steps:
-
-1. Download or clone the repository to your project directory.
-2. Link the `decilitre.css` or `decilitre.min.css` file in the `<head>` section of your HTML file.
-3. Start using the framework classes and styles in your HTML markup.
-
 ## Usage
 
 To customize the styling in Decilitre, you can leverage the provided SCSS variables if you are using SCSS in your project. If you are using CSS, you can modify the CSS variables directly. Below are the available variables along with their default values and usage within Decilitre:
