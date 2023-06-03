@@ -1,7 +1,7 @@
 {
   "name": "decilitre",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "A versatile CSS stylesheet for quick startup, providing a solid foundation while getting out of your way as soon as possible (WIP)",
   "scripts": {
     "build": "sass src/decilitre.scss dist/decilitre.css &&  sass src/decilitre.scss dist/decilitre.min.css --style compressed",
     "dev:sass": "sass --watch src/decilitre.scss dist/decilitre.css",
