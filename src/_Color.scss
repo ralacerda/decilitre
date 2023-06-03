@@ -1,4 +1,9 @@
 // Color
+//
+// We use css custom properties and SCSS defaults,
+// This way you can easily change the values
+// in CSS or SCSS
+//
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 $color-primary: var(--color-primary, #9b4dca) !default;

@@ -1,4 +1,10 @@
 // Button
+//
+// This only reset the button to remove borders, background,
+// change the cursor on hover and inherit the font.
+//
+// We replace the default focus states with our own
+// which uses 'focus-within' and an outline using the primary color
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 button,

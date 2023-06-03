@@ -1,4 +1,11 @@
 // List
+//
+// Inspired by Andy Bell Modern CSS Reset
+// https://andy-bell.co.uk/a-modern-css-reset/
+//
+// Forcing the use of `role="list"` fix acessibility problems
+// in iOS
+//
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 :where(ol, dl, ul) {
