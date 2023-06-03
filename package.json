@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "build": "sass src/decilitre.scss dist/decilitre.css",
+    "build": "sass src/decilitre.scss dist/decilitre.css &&  sass src/decilitre.scss dist/decilitre.min.css --style compressed",
     "dev:sass": "sass --watch src/decilitre.scss dist/decilitre.css",
     "dev:vite": "vite",
     "dev": "concurrently --names \"sass,vite\" -c \"yellow.bold,magenta.bold\" \"pnpm dev:sass\" \"pnpm dev:vite\""

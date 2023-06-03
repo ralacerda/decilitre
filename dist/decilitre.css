@@ -1,13 +1,13 @@
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-repeat: no-repeat;
 }
 
 :where(body) {
-  box-sizing: border-box;
   color: var(--color-fg, #0a0a0a);
   font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", Arial, sans-serif;
   line-height: 1.6;
@@ -185,26 +185,6 @@ textarea {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-.button {
-  display: inline-block;
-  border: 1px solid var(--color-primary, #9b4dca);
-  color: var(--color-fg, #0a0a0a);
-  text-decoration: none;
-  padding: 0.6em 0.8em;
-  border-radius: 0.2em;
-  line-height: 1;
-}
-.button:focus {
-  outline: none;
-}
-.button:focus-visible {
-  outline: 1px solid var(--color-primary, #9b4dca);
-  outline-offset: 1px;
-}
-.button[disabled] {
-  cursor: default;
-  opacity: 0.4;
 }
 
 /*# sourceMappingURL=decilitre.css.map */
