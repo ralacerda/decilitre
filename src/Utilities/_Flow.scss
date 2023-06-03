@@ -7,5 +7,5 @@
 $flow-space: var(--flow-space, 1em) !default;
 
 .flow > * + * {
-  margin-block-start: var(--flow-space, 1em);
+  margin-block-start: $flow-space;
 }

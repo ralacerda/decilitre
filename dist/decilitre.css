@@ -208,7 +208,7 @@ textarea {
 }
 
 .container {
-  width: min(100% - var(--container-padding, 3rem), var(var(--container-max, 60ch), 60ch));
+  width: min(100% - var(--container-padding, 3rem), var(--container-max, 60ch));
   margin-inline: auto;
 }
 
