@@ -1,0 +1,13 @@
+// Container Utility
+//
+// Inspired by Stephanie Eckles's Smolcss
+// https://smolcss.dev/
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$container-max: var(--container-max, 60ch) !default;
+$container-padding: var(--container-padding, 3rem) !default;
+
+.container {
+  width: min(100% - $container-padding, var($container-max, 60ch));
+  margin-inline: auto;
+}

@@ -1,0 +1,11 @@
+// Full bleed utility
+//
+// Andy Bell full-bleed class
+// https://archive.hankchizljaw.com/wrote/creating-a-full-bleed-css-utility/
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
