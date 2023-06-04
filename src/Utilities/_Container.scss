@@ -4,10 +4,10 @@
 // https://smolcss.dev/
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$container-max: var(--container-max, 60ch) !default;
-$container-padding: var(--container-padding, 3rem) !default;
+$container-max: var(--container-max, 80ch) !default;
+$container-margin: var(--container-margin, 3rem) !default;
 
 .container {
-  width: min(100% - $container-padding, $container-max);
+  width: min(100% - $container-margin, $container-max);
   margin-inline: auto;
 }
