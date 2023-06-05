@@ -162,22 +162,6 @@ It allows content to spread the full viewport's width. Useful for "escaping" out
 }
 ```
 
-#### Stack
-
-"Smol Stack Layout" from Stephanie Eckles's [Smolcss](https://smolcss.dev/#smol-stack-layout).
-It creates a grid with all the elements places on the same grid-area. Useful for creating hero sections and using images or videos as a background.
-
-```css
-.stack {
-  display: grid;
-  grid-template-areas: "stack";
-}
-
-.stack > * {
-  grid-area: stack;
-}
-```
-
 ## Inspiration
 
 Decilitre is inspired by the following projects:

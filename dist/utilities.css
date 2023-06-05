@@ -20,7 +20,7 @@
 }
 
 .container {
-  width: min(100% - var(--container-margin, 3rem), var(--container-max, 80ch));
+  width: min(100% - var(--container-margin, 3rem), var(--container-max, 120ch));
   margin-inline: auto;
 }
 
@@ -29,18 +29,10 @@
 }
 
 .full-bleed {
+  max-width: unset;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-}
-
-.stack {
-  display: grid;
-  grid-template-areas: "stack";
-}
-
-.stack > * {
-  grid-area: stack;
 }
 
 /*# sourceMappingURL=utilities.css.map */
