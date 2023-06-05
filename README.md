@@ -15,7 +15,7 @@ Link decilitre stylesheet
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.3.2/dist/decilitre.min.css"
+  href="https://cdn.jsdelivr.net/npm/decilitre@0.3.3/dist/decilitre.min.css"
   rel="stylesheet"
 />
 ```
@@ -24,7 +24,7 @@ Optionally, include a link to the utilities stylesheet
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.3.2/dist/utilities.min.css"
+  href="https://cdn.jsdelivr.net/npm/decilitre@0.3.3/dist/utilities.min.css"
   rel="stylesheet"
 />
 ```
