@@ -4,18 +4,18 @@ Decilitre is CSS stylesheet that aims to strike a balance between a lightweight 
 
 ## Features
 
-- **Reset and Normalize**: Decilitre draws inspiration from projects like Normalize, Sanitize, and Andy Bell's Modern Reset to ensure consistent styling across different browsers and devices.
+- **Reset and Normalize**: Decilitre draws inspiration from projects like Normalize and Sanitize to ensure consistent styling across different browsers and devices.
 - **Good Defaults**: The framework includes sensible default styles for forms, blockquotes, code blocks and tables, providing a solid starting point for your projects.
-- **Few Opt-in Components**: Decilitre focuses on providing a minimal set of opt-in components, allowing you to choose which components to include in your project and reducing unnecessary bloat.
 - **Minimal and Non-Intrusive**: Decilitre strives to get out of your way as soon as possible. It uses low specificity selectors so you don't have to worry about it.
+- **Few Opt-in Utilities**: Decilitre provides a minimal set of opt-in utility classes.
 
 ## Usage
 
-Include a link to the decilitre stylesheet
+Link decilitre stylesheet
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.2.0/dist/decilitre.min.css"
+  href="https://cdn.jsdelivr.net/npm/decilitre@0.3.2/dist/decilitre.min.css"
   rel="stylesheet"
 />
 ```
@@ -24,7 +24,7 @@ Optionally, include a link to the utilities stylesheet
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.2.0/dist/utilities.min.css"
+  href="https://cdn.jsdelivr.net/npm/decilitre@0.3.2/dist/utilities.min.css"
   rel="stylesheet"
 />
 ```
@@ -156,6 +156,7 @@ It allows content to spread the full viewport's width. Useful for "escaping" out
 
 ```css
 .full-bleed {
+  max-width: unset;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -166,7 +167,7 @@ It allows content to spread the full viewport's width. Useful for "escaping" out
 
 Decilitre is inspired by the following projects:
 
-- [Miligram](https://milligram.io): Decilitre uses a lot of code from Miligram and builds upon its lightweight and minimalistic approach.
+- [Miligram](https://milligram.io): We used a reduced version of Miligram as a base for Decilitre.
 - [Normalize](https://necolas.github.io/normalize.css/) and [Sanitize](https://github.com/csstools/sanitize.css): Decilitre borrows some code from these projects to ensure consistent and normalized styling across browsers.
 
 Decilitre is also inspired by the following creators:
@@ -190,7 +191,6 @@ If you don't think Decilitre is the right solution for your use case, here are s
 ## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
-This repository includes a playground so you can check how your changes affect the stylying. Use `pnpm dev` to start the vite server with the scss compiler.
 
 ## License
 
