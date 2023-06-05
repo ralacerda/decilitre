@@ -11,7 +11,7 @@
 button,
 input[type="button"],
 input[type="reset"],
-in put[type="submit"] {
+input[type="submit"] {
   :where(&) {
     background-color: inherit;
     cursor: pointer;
