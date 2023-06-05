@@ -153,11 +153,12 @@ It adds margin-top to all but the first child elements. The size is based on the
 
 Andy Bell's [full bleed utility](https://archive.hankchizljaw.com/wrote/creating-a-full-bleed-css-utility/).
 It allows content to spread the full viewport's width. Useful for "escaping" out of a container class.
+We give it a little more than 100vw width to avoid problems with partial pixels.
 
 ```css
 .full-bleed {
   max-width: unset;
-  width: 100vw;
+  width: 100.02vw;
   margin-left: 50%;
   transform: translateX(-50%);
 }
