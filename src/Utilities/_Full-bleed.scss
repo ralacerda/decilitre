@@ -5,6 +5,7 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .full-bleed {
+  max-width: unset; // In case we are using an img element
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
