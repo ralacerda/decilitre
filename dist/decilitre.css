@@ -43,7 +43,7 @@ in put[type=submit]:focus) {
 input[type=button]:focus-visible,
 input[type=reset]:focus-visible,
 in put[type=submit]:focus-visible) {
-  outline: 1px solid var(--color-primary, #9b4dca);
+  outline: 1px solid var(--color-primary, #4871c6);
   outline-offset: 1px;
 }
 :where(button[disabled],
@@ -63,7 +63,7 @@ in put[type=submit][disabled]) {
 
 :where(pre) {
   background: var(--color-details-bg, #f4f5f6);
-  border-left: 0.3em solid var(--color-primary, #9b4dca);
+  border-left: 0.3em solid var(--color-primary, #4871c6);
   overflow-y: hidden;
 }
 :where(:where(pre) > code) {
@@ -114,7 +114,7 @@ input[type=week]:focus,
 input:not([type]):focus,
 textarea:focus,
 select:focus) {
-  border-color: var(--color-primary, #9b4dca);
+  border-color: var(--color-primary, #4871c6);
   outline: 0;
 }
 
@@ -124,14 +124,14 @@ textarea {
 }
 
 :where(a) {
-  color: var(--color-primary, #9b4dca);
+  color: var(--color-primary, #4871c6);
   text-decoration: none;
 }
 :where(a):focus, :where(a):hover {
   text-decoration: underline;
 }
 :where(a):focus-within {
-  outline: 1px solid var(--color-primary, #9b4dca);
+  outline: 1px solid var(--color-primary, #4871c6);
   outline-offset: 2px;
   border-radius: 0.2em;
 }
