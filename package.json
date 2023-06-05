@@ -1,21 +1,25 @@
 {
   "name": "decilitre",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A versatile CSS stylesheet for quick startup, providing a solid foundation while getting out of your way as soon as possible (WIP)",
   "scripts": {
     "build": "sass src/modules.scss:dist/decilitre.css src/utilities.scss:dist/utilities.css &&  sass src/modules.scss:dist/decilitre.min.css src/utilities.scss:dist/utilities.min.css --style compressed",
-    "dev:sass": "sass --watch src/modules.scss:dist/decilitre.css src/utilities.scss:dist/utilities.css",
-    "dev:vite": "vite",
-    "dev": "concurrently --names \"sass,vite\" -c \"yellow.bold,magenta.bold\" \"pnpm dev:sass\" \"pnpm dev:vite\""
+    "dev": "sass --watch src/modules.scss:dist/decilitre.css src/utilities.scss:dist/utilities.css"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "sass": "^1.62.1",
-    "vite": "^4.3.9"
+  "homepage": "https://github.com/ralacerda/decilitre#readme",
+  "author": {
+    "name": "Renato Lacerda",
+    "email": "renato.ac.lacerda@gmail.com",
+    "url": "https://github.com/ralacerda"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ralacerda/decilitre"
+  },
+  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "concurrently": "^8.1.0"
+    "sass": "^1.62.1"
   }
 }
