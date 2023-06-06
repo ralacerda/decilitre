@@ -76,15 +76,15 @@ Please note that Decilitre does not provide background or foreground colors.
 
 #### Button
 
-A simple button. Note that we don't set a background, only a border using the primary color.
+A simple button. Note that we don't set a background, only a border.
 The button should look the same using a `button` or `a` tag. We replace the default focus states
-with a outline using the primary color.
+with an outline.
 
 ```scss
 .button {
   display: inline-block;
-  border: 1px solid $color-primary;
-  color: $color-fg;
+  border: 1px solid $button-color;
+  color: inherit;
   text-decoration: none;
   padding: 0.6em 0.8em;
   border-radius: 0.2em;
@@ -95,7 +95,7 @@ with a outline using the primary color.
   }
 
   &:focus-visible {
-    outline: 1px solid $color-primary;
+    outline: 1px solid $button-color;
     outline-offset: 1px;
   }
 
@@ -105,6 +105,12 @@ with a outline using the primary color.
   }
 }
 ```
+
+If `$button-color` it's not set, it'll first fallback to `--color-primary`. This way we can assure that `.button` can use the primary color of decilitre while at the same time being avaliable for use on it's own.
+
+- SCSS Variable: `$button-color`
+- CSS Variable: `--button-color`
+- Default Value: `--color-primary or #9b4dca`
 
 #### Container
 
