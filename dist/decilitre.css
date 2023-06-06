@@ -8,7 +8,6 @@
 }
 
 :where(body) {
-  color: var(--color-fg, #0a0a0a);
   font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", Arial, sans-serif;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
@@ -27,7 +26,7 @@
 :where(button,
 input[type=button],
 input[type=reset],
-in put[type=submit]) {
+input[type=submit]) {
   background-color: inherit;
   cursor: pointer;
   border: none;
@@ -36,20 +35,20 @@ in put[type=submit]) {
 :where(button:focus,
 input[type=button]:focus,
 input[type=reset]:focus,
-in put[type=submit]:focus) {
+input[type=submit]:focus) {
   outline: none;
 }
 :where(button:focus-visible,
 input[type=button]:focus-visible,
 input[type=reset]:focus-visible,
-in put[type=submit]:focus-visible) {
+input[type=submit]:focus-visible) {
   outline: 1px solid var(--color-primary, #4871c6);
   outline-offset: 1px;
 }
 :where(button[disabled],
 input[type=button][disabled],
 input[type=reset][disabled],
-in put[type=submit][disabled]) {
+input[type=submit][disabled]) {
   cursor: default;
 }
 
