@@ -49,14 +49,6 @@ To customize the styling in Decilitre, you can leverage the provided SCSS variab
   - Used for focus states
     `
 
-#### Foreground Color
-
-- SCSS Variable: `$color-fg`
-- CSS Variable: `--color-fg`
-- Default Value: `#0a0a0a`
-- Usage:
-  - Used for all text
-
 #### Background details
 
 - SCSS Variable: `$color-details-bg`
@@ -78,8 +70,7 @@ To customize the styling in Decilitre, you can leverage the provided SCSS variab
   - Used for dividers
   - Should be close to the foreground color
 
-Please note that Decilitre does not provide a background color. You can set your own background color based on your project's requirements.
-es.
+Please note that Decilitre does not provide background or foreground colors.
 
 ### Utilities
 
