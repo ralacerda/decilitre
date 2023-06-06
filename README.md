@@ -6,12 +6,12 @@ Decilitre is CSS stylesheet that aims to strike a balance between a lightweight 
 
 - **Reset and Normalize**: Decilitre draws inspiration from projects like Normalize and Sanitize to ensure consistent styling across different browsers and devices.
 - **Good Defaults**: The framework includes sensible default styles for forms, blockquotes, code blocks and tables, providing a solid starting point for your projects.
-- **Minimal and Non-Intrusive**: Decilitre strives to get out of your way as soon as possible. It uses low specificity selectors so you don't have to worry about it.
+- **Minimal and Non-Intrusive**: Decilitre strives to get out of your way as soon as possible. It utilizes low specificity selectors, so you don't have to worry about your custom styles being overridden.
 - **Few Opt-in Utilities**: Decilitre provides a minimal set of opt-in utility classes.
 
 ## Usage
 
-Link decilitre stylesheet
+Link to the decilitre stylesheet:
 
 ```html
 <link
@@ -20,7 +20,7 @@ Link decilitre stylesheet
 />
 ```
 
-Optionally, include a link to the utilities stylesheet
+Optionally, include a link to the utilities stylesheet:
 
 ```html
 <link
@@ -47,7 +47,6 @@ To customize the styling in Decilitre, you can leverage the provided SCSS variab
   - Used for the botton class
   - Used for block code decoration
   - Used for focus states
-    `
 
 #### Background details
 
