@@ -3,6 +3,9 @@
 // Inspired by Miligram Form components
 // https://github.com/milligram/milligram/blob/main/src/_Form.sass
 //
+// 1. Inherit font
+// https://www.joshwcomeau.com/css/custom-css-reset/#six-inherit-fonts-for-form-controls-7
+//
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 input[type="date"],
@@ -26,6 +29,7 @@ select {
     box-shadow: none;
     padding: 0.6em 1em;
     width: 100%;
+    font: inherit; // 1
   }
 
   :where(&:focus) {
@@ -34,7 +38,7 @@ select {
   }
 }
 
-textarea {
+:where(textarea) {
   min-height: 4em;
   resize: vertical;
 }

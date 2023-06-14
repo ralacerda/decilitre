@@ -6,6 +6,9 @@
 // We replace the default focus states with our own
 // which uses 'focus-within' and an outline using the primary color
 //
+// 1. Inherit font
+// https://www.joshwcomeau.com/css/custom-css-reset/#six-inherit-fonts-for-form-controls-7
+//
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 button,
@@ -16,7 +19,7 @@ input[type="submit"] {
     background-color: inherit;
     cursor: pointer;
     border: none;
-    font: inherit;
+    font: inherit; // 1
   }
 
   :where(&:focus) {
