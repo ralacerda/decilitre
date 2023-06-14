@@ -11,6 +11,7 @@
   font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", Arial, sans-serif;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 :where(blockquote) {
@@ -98,6 +99,7 @@ select) {
   box-shadow: none;
   padding: 0.6em 1em;
   width: 100%;
+  font: inherit;
 }
 :where(input[type=date]:focus,
 input[type=datetime-local]:focus,
@@ -117,7 +119,7 @@ select:focus) {
   outline: 0;
 }
 
-textarea {
+:where(textarea) {
   min-height: 4em;
   resize: vertical;
 }
@@ -162,9 +164,8 @@ textarea {
   padding-right: 0;
 }
 
-:where(img, picture) {
+:where(img, picture, video, canvas, svg) {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
