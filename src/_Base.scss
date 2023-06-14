@@ -10,6 +10,9 @@
 //
 // 4. Remove subpixel antialising on MacOS browsers
 // https://www.joshwcomeau.com/css/custom-css-reset/#four-font-smoothing-5
+
+// 5. Word wrapping
+// https://www.joshwcomeau.com/css/custom-css-reset/#seven-word-wrapping-8
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 *,
 *:after,
@@ -25,4 +28,8 @@
   line-height: 1.6;
   -webkit-text-size-adjust: 100%; // 3
   -webkit-font-smoothing: antialiased; // 4
+}
+
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word; // 5
 }
