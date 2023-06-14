@@ -14,6 +14,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+:where(p, h1, h2, h3, h4, h5, h6) {
+  overflow-wrap: break-word;
+}
+
 :where(blockquote) {
   border-left: 0.3rem solid var(--color-details-fg, #d1d1d1);
   margin-left: 0;
