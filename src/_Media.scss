@@ -1,12 +1,11 @@
-// Image
+// Media
 //
-// Inspired by Normalize and Sanitize
-//
+// Inspired by Normalize, Sanitize and Josh W Comeau
+// https://www.joshwcomeau.com/css/custom-css-reset/#five-sensible-media-defaults-6
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-:where(img, picture) {
+:where(img, picture, video, canvas, svg) {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
