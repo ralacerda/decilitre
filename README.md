@@ -171,6 +171,7 @@ Decilitre is also inspired by the following creators:
 
 - [Andy Bell](https://andy-bell.co.uk/)
 - [Stephanie Eckles ](https://thinkdobecreate.com/)
+- [Josh W Comeau](https://www.joshwcomeau.com/)
 
 ## Recommendations
 
