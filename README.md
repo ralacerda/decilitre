@@ -105,6 +105,8 @@ with an outline.
 }
 ```
 
+**Button Color**
+
 If `$button-color` it's not set, it'll first fallback to `--color-primary`. This way we can assure that `.button` can use the primary color of decilitre while at the same time being avaliable for use on it's own.
 
 - SCSS Variable: `$button-color`
@@ -122,9 +124,13 @@ If `$button-color` it's not set, it'll first fallback to `--color-primary`. This
 }
 ```
 
+**Container Margin**
+
 - SCSS Variable: `$container-margin`
 - CSS Variable: `--container-margin`
 - Default Value: `3rem`
+
+**Container Maximum Size**
 
 - SCSS Variable: `$container-max`
 - CSS Variable: `--container-max`
@@ -140,6 +146,8 @@ It adds margin-top to all but the first child elements. The size is based on the
   margin-block-start: $flow-space;
 }
 ```
+
+**Flow Spacing**
 
 - SCSS Variable: `$flow-space`
 - CSS Variable: `--flow-space`
