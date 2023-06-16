@@ -1,41 +1,34 @@
-.button {
+:where(.button) {
   display: inline-block;
-  border: 1px solid var(--button-color, var(--color-primary, #9b4dca));
+  border: 1px solid var(--button-color, var(--color-primary, #4871c6));
   color: inherit;
   text-decoration: none;
   padding: 0.6em 0.8em;
   border-radius: 0.2em;
   line-height: 1;
 }
-.button:focus {
-  outline: none;
-}
-.button:focus-visible {
-  outline: 1px solid var(--button-color, var(--color-primary, #9b4dca));
-  outline-offset: 1px;
-}
-.button[disabled] {
+:where(:where(.button)[disabled]) {
   cursor: default;
   opacity: 0.4;
 }
 
-.container {
+:where(.container) {
   width: min(100% - var(--container-margin, 3rem), var(--container-max, 120ch));
   margin-inline: auto;
 }
 
-.flow > * + * {
-  margin-block-start: var(--flow-space, 1em);
+:where(.flow) > * + * {
+  margin-top: var(--flow-space, 1em);
 }
 
-.full-bleed {
+:where(.full-bleed) {
   max-width: unset;
   width: 100.02vw;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
-.sr-only {
+:where(.sr-only) {
   position: absolute;
   width: 1px;
   height: 1px;

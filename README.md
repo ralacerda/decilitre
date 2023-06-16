@@ -19,7 +19,7 @@ Link to the decilitre stylesheet.
 
 <!-- prettier-ignore -->
 ```html
-<link href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/decilitre.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/decilitre@0.6.0/dist/decilitre.min.css" rel="stylesheet" />
 ```
 
 Optionally, you can also link the utilities stylesheet.
@@ -27,7 +27,7 @@ Utilities don't depend on the decilitre stylesheet, so you can use them in any o
 
 <!-- prettier-ignore -->
 ```html
-<link href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/utilities.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/decilitre@0.6.0/dist/utilities.min.css" rel="stylesheet" />
 ```
 
 ## Customize
