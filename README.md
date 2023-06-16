@@ -171,7 +171,7 @@ We give it a little more than 100vw width to avoid problems with partial pixels.
 
 #### Screen Readers Only
 
-This utility class provides a solution for hiding content from the browser while ensuring its visibility to screen readers. It is an alternative to using `visibility: hidden`, as the latter removes the element from the accessibility tree. Numerous implementations of this utility class exist, we have opted for [Tailwind's version](https://tailwindcss.com/docs/screen-readers).
+This utility class provides a solution for hiding content from the browser while ensuring its visibility to screen readers. It is an alternative to using `visibility: hidden`, as the latter removes the element from the accessibility tree. Numerous implementations of this utility class exist, we have opted for [Tailwind's version](https://tailwindcss.com/docs/screen-readers). Please note that this is a hack and not a complete solution, see this article about [possible accessibility problems](https://blog.logrocket.com/design-accessibility-css-visually-hidden-class/).
 
 ```css
 .sr-only {
