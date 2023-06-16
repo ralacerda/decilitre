@@ -1,5 +1,7 @@
 # Decilitre CSS Framework (Work In Progress)
 
+![https://github.com/ralacerda/decilitre/blob/main/LICENSE](https://img.shields.io/github/license/ralacerda/decilitre) ![https://www.npmjs.com/package/decilitre](https://img.shields.io/npm/v/decilitre)
+
 Decilitre is CSS stylesheet that aims to strike a balance between a lightweight CSS framework and a CSS normalizer, providing good defaults, normalization and opt-in utility classes. It aims to speed up development by offering a set of common styles that you would most likely end up writing anyway.
 
 ## Features
