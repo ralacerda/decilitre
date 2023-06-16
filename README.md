@@ -11,7 +11,9 @@ Decilitre is CSS stylesheet that aims to strike a balance between a lightweight 
 
 ## Usage
 
-Link to the decilitre stylesheet:
+### CDN
+
+Link to the decilitre stylesheet.
 
 ```html
 <link
@@ -20,7 +22,8 @@ Link to the decilitre stylesheet:
 />
 ```
 
-Optionally, include a link to the utilities stylesheet:
+Optionally, you can also link the utilities stylesheet.
+Utilities don't depend on the decilitre stylesheet, so you can use them in any other project.
 
 ```html
 <link
@@ -28,8 +31,6 @@ Optionally, include a link to the utilities stylesheet:
   rel="stylesheet"
 />
 ```
-
-Utilities don't depend on the decilitre stylesheet, so you can use them in any other project.
 
 ## Customize
 
