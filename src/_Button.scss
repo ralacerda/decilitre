@@ -22,15 +22,6 @@ input[type="submit"] {
     font: inherit; // 1
   }
 
-  :where(&:focus) {
-    outline: none;
-  }
-
-  :where(&:focus-visible) {
-    outline: 1px solid $color-primary;
-    outline-offset: 1px;
-  }
-
   :where(&[disabled]) {
     cursor: default;
   }

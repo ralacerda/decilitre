@@ -1,0 +1,13 @@
+$focus-size: var(--focus-size, 2px) !default;
+$focus-style: var(--focus-style, solid) !default;
+$focus-color: var(--focus-color, var(--primary-color, #4871c6)) !default;
+$focus-offset: var(--focus-offset, $focus-size) !default;
+
+:where(a, button, summary):focus-visible {
+  outline: $focus-size $focus-style $focus-color;
+  outline-offset: $focus-offset;
+}
+
+:where(a, button, summary):focus:not(:focus-visible) {
+  outline: none;
+}

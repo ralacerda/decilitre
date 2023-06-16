@@ -12,15 +12,6 @@ $button-color: var(--button-color, var(--color-primary, #4871c6)) !default;
   border-radius: 0.2em;
   line-height: 1;
 
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 1px solid $button-color;
-    outline-offset: 1px;
-  }
-
   &[disabled] {
     cursor: default;
     opacity: 0.4;
