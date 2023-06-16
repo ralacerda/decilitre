@@ -1,0 +1,10 @@
+// Media
+//
+// This helps make it clear that summary is an
+// interactive element
+//
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+:where(summary) {
+  cursor: pointer;
+}
