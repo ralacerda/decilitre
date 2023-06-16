@@ -1,4 +1,4 @@
-# Decilitre CSS Framework (Work In Progress)
+# Decilitre (Work In Progress)
 
 ![https://github.com/ralacerda/decilitre/blob/main/LICENSE](https://img.shields.io/github/license/ralacerda/decilitre) ![https://www.npmjs.com/package/decilitre](https://img.shields.io/npm/v/decilitre)
 
@@ -17,21 +17,17 @@ Decilitre is CSS stylesheet that aims to strike a balance between a lightweight 
 
 Link to the decilitre stylesheet.
 
+<!-- prettier-ignore -->
 ```html
-<link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/decilitre.min.css"
-  rel="stylesheet"
-/>
+<link href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/decilitre.min.css" rel="stylesheet" />
 ```
 
 Optionally, you can also link the utilities stylesheet.
 Utilities don't depend on the decilitre stylesheet, so you can use them in any other project.
 
+<!-- prettier-ignore -->
 ```html
-<link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/utilities.min.css"
-  rel="stylesheet"
-/>
+<link href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/utilities.min.css" rel="stylesheet" />
 ```
 
 ## Customize
@@ -74,13 +70,41 @@ To customize the styling in Decilitre, you can leverage the provided SCSS variab
 
 Please note that Decilitre does not provide background or foreground colors.
 
-### Utilities
+### Focus
 
-#### Button
+If supported, we use `:focus-visible` to show an outline around focused elements.
+The outline can be customize with the following:
+
+#### Focus size
+
+- SCSS Variable: `$focus-size`
+- CSS Variable: `--focus-size`
+- Default Value: `2px`
+
+#### Focus Style
+
+- SCSS Variable: `$focus-style`
+- CSS Variable: `--focus-style`
+- Default Value: `solid`
+
+#### Focus color
+
+- SCSS Variable: `$focus-color`
+- CSS Variable: `--focus-color`
+- Default Value: `--primary-color` or `#4871c6`
+
+#### Focus offset
+
+- SCSS Variable: `$focus-offset`
+- CSS Variable: `--focus-offset`
+- Default Value: `$focus-size` or `--focus-size` or `2px`
+
+## Utilities
+
+### Button
 
 A simple button. Note that we don't set a background, only a border.
-The button should look the same using a `button` or `a` tag. We replace the default focus states
-with an outline.
+The button should look the same using a `button` or `a` tag.
 
 ```scss
 .button {
@@ -108,15 +132,15 @@ with an outline.
 }
 ```
 
-**Button Color**
+#### Button Color
 
 If `$button-color` it's not set, it'll first fallback to `--color-primary`. This way we can assure that `.button` can use the primary color of decilitre while at the same time being avaliable for use on it's own.
 
 - SCSS Variable: `$button-color`
 - CSS Variable: `--button-color`
-- Default Value: `--color-primary or #9b4dca`
+- Default Value: `--color-primary` or `#9b4dca`
 
-#### Container
+### Container
 
 "Smol Intrinsic Container" utility from Stephanie Eckles's [Smolcss](https://smolcss.dev/#smol-container).
 
@@ -127,19 +151,19 @@ If `$button-color` it's not set, it'll first fallback to `--color-primary`. This
 }
 ```
 
-**Container Margin**
+#### Container Margin
 
 - SCSS Variable: `$container-margin`
 - CSS Variable: `--container-margin`
 - Default Value: `3rem`
 
-**Container Maximum Size**
+#### Container Maximum Size
 
 - SCSS Variable: `$container-max`
 - CSS Variable: `--container-max`
 - Default Value: `80ch`
 
-#### Flow
+### Flow
 
 Andy Bell's [flow utility](https://andy-bell.co.uk/my-favourite-3-lines-of-css/).
 It adds margin-top to all but the first child elements. The size is based on the font size. Useful to quickly add spacing for text content.
@@ -150,13 +174,13 @@ It adds margin-top to all but the first child elements. The size is based on the
 }
 ```
 
-**Flow Spacing**
+#### Flow Spacing
 
 - SCSS Variable: `$flow-space`
 - CSS Variable: `--flow-space`
 - Default Value: `1em`
 
-#### Full-bleed
+### Full-bleed
 
 Andy Bell's [full bleed utility](https://archive.hankchizljaw.com/wrote/creating-a-full-bleed-css-utility/).
 It allows content to spread the full viewport's width. Useful for "escaping" out of a container class.
@@ -171,7 +195,7 @@ We give it a little more than 100vw width to avoid problems with partial pixels.
 }
 ```
 
-#### Screen Readers Only
+### Screen Readers Only
 
 This utility class provides a solution for hiding content from the browser while ensuring its visibility to screen readers. It is an alternative to using `visibility: hidden`, as the latter removes the element from the accessibility tree. Numerous implementations of this utility class exist, we have opted for [Tailwind's version](https://tailwindcss.com/docs/screen-readers). Please note that this is a hack and not a complete solution, see this article about [possible accessibility problems](https://blog.logrocket.com/design-accessibility-css-visually-hidden-class/).
 
