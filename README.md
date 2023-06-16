@@ -17,7 +17,7 @@ Link to the decilitre stylesheet.
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.4.2/dist/decilitre.min.css"
+  href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/decilitre.min.css"
   rel="stylesheet"
 />
 ```
@@ -27,7 +27,7 @@ Utilities don't depend on the decilitre stylesheet, so you can use them in any o
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/decilitre@0.4.2/dist/utilities.min.css"
+  href="https://cdn.jsdelivr.net/npm/decilitre@0.5.0/dist/utilities.min.css"
   rel="stylesheet"
 />
 ```
