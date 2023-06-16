@@ -1,0 +1,40 @@
+body {
+  padding-block: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  background-color: #4871c6;
+  color: white;
+  padding: 0.2em 0.4em;
+}
+
+h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero {
+  padding-block: 8rem;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.badges {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.github-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

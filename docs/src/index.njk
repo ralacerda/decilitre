@@ -1,0 +1,42 @@
+{% set version %} 0.6.0 {% endset %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decilitre</title>
+    <style>
+      {% include "index.css" %}
+      {% include "prism.css" %}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/decilitre.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/utilities.min.css" rel="stylesheet" />
+  </head>
+  <body class="container">
+    <header class="hero">
+      <h1 class="button">Decilitre</h1>
+      <p>A versatile CSS stylesheet for quick startup, providing a solid foundation while getting out of your way as soon as possible</p>
+      <div class="badges">
+        <a><img src="https://img.shields.io/npm/l/decilitre?color=%234871c6" /></a>
+        <a><img src="https://img.shields.io/npm/v/decilitre?color=%234871c6" /></a>
+      </div>
+      <a href="https://github.com/ralacerda/decilitre" class="github-link" aria-label="View source on GitHub">
+      {% include "github.svg"%}
+      </a>
+    </header>
+    <main class="flow">
+      <h2> Quick Start </h2>
+      <p> Link to the Decilitre stylesheets in your HTML <code>&lt;head&gt;</code> tag.</p>
+      <pre><code class="language-markup">&lt;!-- Decelitre modules --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/decilitre.min.css" rel="stylesheet" /&gt;
+&lt;!-- Optional utilities --&gt;
+&lt;link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/utilities.min.css" rel="stylesheet" /&gt;</code></pre>
+    </main>
+  </body>
+  <script>
+    {% include "script.js" %}
+    {% include "prism.js" %}
+  </script>
+</html>

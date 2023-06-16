@@ -4,7 +4,9 @@
   "description": "A versatile CSS stylesheet for quick startup, providing a solid foundation while getting out of your way as soon as possible (WIP)",
   "scripts": {
     "build": "sass src/modules.scss:dist/decilitre.css src/utilities.scss:dist/utilities.css &&  sass src/modules.scss:dist/decilitre.min.css src/utilities.scss:dist/utilities.min.css --style compressed",
-    "dev": "sass --watch src/modules.scss:dist/decilitre.css src/utilities.scss:dist/utilities.css"
+    "dev:sass": "sass --watch src/modules.scss:dist/decilitre.css src/utilities.scss:dist/utilities.css",
+    "build:docs": "pnpx @11ty/eleventy",
+    "dev:docs": "pnpx @11ty/eleventy --serve"
   },
   "keywords": [],
   "homepage": "https://github.com/ralacerda/decilitre#readme",
