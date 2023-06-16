@@ -1,9 +1,24 @@
-<img height=40 style="display: block; margin-inline: auto; margin-bottom: 1rem;" src="logo.svg">
-
-<div style="text-align: center">
-
-![](https://img.shields.io/npm/l/decilitre?color=%234871c6) ![](https://img.shields.io/npm/l/decilitre?color=%234871c6)
-
+<div align="center">
+  <div>
+    <a href="https://ralacerda.github.io/decilitre/">
+      <img height=40 style="display: block;" src="logo.svg">
+    </a>
+  </div>
+  
+  <div>
+    <a href="https://github.com/ralacerda/decilitre/blob/main/LICENSE">
+      <img src="https://img.shields.io/npm/l/decilitre?color=%234871c6" /> 
+    </a>
+    <a href="https://www.npmjs.com/package/decilitre">
+      <image src="https://img.shields.io/npm/l/decilitre?color=%234871c6" />
+    </a>
+  </div>
+  
+  <div>
+    <a href="https://ralacerda.github.io/decilitre/">
+      https://ralacerda.github.io/decilitre/
+    </a>
+  </div>
 </div>
 
 ---
