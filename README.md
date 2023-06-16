@@ -160,6 +160,24 @@ We give it a little more than 100vw width to avoid problems with partial pixels.
 }
 ```
 
+#### Screen Readers Only
+
+This utility class provides a solution for hiding content from the browser while ensuring its visibility to screen readers. It is an alternative to using `visibility: hidden`, as the latter removes the element from the accessibility tree. Numerous implementations of this utility class exist, we have opted for [Tailwind's version](https://tailwindcss.com/docs/screen-readers).
+
+```css
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+```
+
 ## Inspiration
 
 Decilitre is inspired by the following projects:
@@ -193,3 +211,7 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## License
 
 Decilitre CSS Framework is released under the [MIT License](LICENSE).
+
+```
+
+```
