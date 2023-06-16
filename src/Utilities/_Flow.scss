@@ -6,6 +6,6 @@
 
 $flow-space: var(--flow-space, 1em) !default;
 
-.flow > * + * {
-  margin-block-start: $flow-space;
+:where(.flow) > * + * {
+  margin-top: $flow-space;
 }

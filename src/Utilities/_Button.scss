@@ -3,7 +3,7 @@
 
 $button-color: var(--button-color, var(--color-primary, #4871c6)) !default;
 
-.button {
+:where(.button) {
   display: inline-block;
   border: 1px solid $button-color;
   color: inherit;
@@ -12,7 +12,7 @@ $button-color: var(--button-color, var(--color-primary, #4871c6)) !default;
   border-radius: 0.2em;
   line-height: 1;
 
-  &[disabled] {
+  :where(&[disabled]) {
     cursor: default;
     opacity: 0.4;
   }

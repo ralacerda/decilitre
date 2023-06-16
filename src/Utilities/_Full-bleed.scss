@@ -4,7 +4,7 @@
 // https://archive.hankchizljaw.com/wrote/creating-a-full-bleed-css-utility/
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.full-bleed {
+:where(.full-bleed) {
   max-width: unset; // In case we are using an img element
   width: 100.02vw;
   margin-left: 50%;
