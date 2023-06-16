@@ -1,7 +1,10 @@
 // Code
 //
-// Same code as the code component from Miligram
+// Inspired by Miligram
 // https://github.com/milligram/milligram/blob/main/src/_Code.sass
+//
+// 1. Modern Font Stack
+// https://modernfontstacks.com/
 //
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -11,6 +14,9 @@
   margin: 0 0.2em;
   padding: 0.2em 0.5em;
   white-space: nowrap;
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace; // 1
+  font-size: 0.85em;
 }
 
 :where(pre) {
@@ -19,6 +25,7 @@
   overflow-y: hidden;
 
   :where(& > code) {
+    line-height: 1.4;
     border-radius: 0;
     display: block;
     padding: 1em 1.5em;
