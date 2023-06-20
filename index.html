@@ -6,10 +6,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.svg"/>
     <title>Decilitre</title>
     <style>
       body {
   padding-block: 1rem;
+  --container-max: 95ch;
 }
 
 h1 {
@@ -51,7 +53,67 @@ h2 {
 
       /* PrismJS 1.29.0
 https://prismjs.com/download.html#themes=prism&languages=markup+css */
-.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#4871c6}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  color: #708090;
+}
+.token.punctuation {
+  color: #999;
+}
+.token.namespace {
+  opacity: 0.7;
+}
+.token.boolean,
+.token.constant,
+.token.deleted,
+.token.number,
+.token.property,
+.token.symbol,
+.token.tag {
+  color: #ae4753;
+}
+.token.attr-name,
+.token.builtin,
+.token.char,
+.token.inserted,
+.token.selector,
+.token.string {
+  color: #478551;
+}
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.operator,
+.token.url {
+  color: #9a6e3a;
+  background: hsla(0, 0%, 100%, 0.5);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #4871c6;
+}
+.token.class-name,
+.token.function {
+  color: #dd4a68;
+}
+.token.important,
+.token.regex,
+.token.variable {
+  color: #e90;
+}
+.token.bold,
+.token.important {
+  font-weight: 700;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
 
     </style>
     <link href="https://cdn.jsdelivr.net/npm/decilitre@0.6.1/dist/decilitre.min.css" rel="stylesheet" />
@@ -94,6 +156,43 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css */
 &lt;link href="https://cdn.jsdelivr.net/npm/decilitre@0.6.1/dist/decilitre.min.css" rel="stylesheet" /&gt;
 &lt;!-- Optional utilities --&gt;
 &lt;link href="https://cdn.jsdelivr.net/npm/decilitre@0.6.1/dist/utilities.min.css" rel="stylesheet" /&gt;</code></pre>
+
+      <h2>Goals and Motivations</h2>
+<p>Decilitre was created to address the repetitive nature of writing CSS code for basic styling and utility classes. While there are other similar projects available, the goal of Decilitre is to focus on providing good defaults and essential utility classes, getting out of your way as soon as possible.</p>
+<p>One of the core principles of Decilitre is to ensure that every CSS rule has a specificity of 0. This means that you can easily override the provided styles without encountering specificity conflicts.</p>
+<p>Decilitre does not aim to be a comprehensive CSS framework or a full reset or normalizer. Its primary focus is on providing essential and non-intrusive code that you would typically write anyway. This means that while using Decilitre, you will still need to write CSS, but you can focus solely on the styles that are specific to your project.</p>
+
+      <h2>Installatio and Usage</h2>
+<p>You can utilize Decilitre with SCSS by overriding the default values and importing only the necessary modules for your project. Alternatively, you can customize Decilitre using CSS custom properties, giving you control over the styles even without a build step.</p>
+<p>Additionally, Decilitre opt-in utility classes can be used independently of the modules. This approach allows you to leverage the utility classes without including the entire set of styles or, alternatively, use only the styles without relying on the utility classes. This flexibility provides a modular approach to suit different project requirements and preferences.</p>
+<p><a href="">Read the docs</a> for more informations on styles and variables avaliable for customization.</p>
+
+      <h2>Inspiration</h2>
+<p>Decilitre is inspired by the following projects:</p>
+<ul>
+<li><a href="https://milligram.io">Miligram</a>: We used a reduced version of Miligram as a base for Decilitre.</li>
+<li><a href="https://necolas.github.io/normalize.css/">Normalize</a> and <a href="https://github.com/csstools/sanitize.css">Sanitize</a>: Decilitre borrows some code from these projects to ensure consistent and normalized styling across browsers.</li>
+</ul>
+<p>Decilitre is also inspired by the following creators:</p>
+<ul>
+<li><a href="https://andy-bell.co.uk/">Andy Bell</a></li>
+<li><a href="https://thinkdobecreate.com/">Stephanie Eckles </a></li>
+<li><a href="https://www.joshwcomeau.com/">Josh W Comeau</a></li>
+</ul>
+<h2>Recommendations</h2>
+<p>If you don't think Decilitre is the right solution for your use case, here are some recommendation for other projects:</p>
+<p><strong>CSS Frameworks</strong>:</p>
+<ul>
+<li>For a full-featured CSS framework with a wide range of components and styling options, consider <a href="https://bulma.io">Bulma</a>.</li>
+<li>For small frameworks with minimal styles and a lightweight footprint, you can try <a href="https://milligram.io">Milligram</a> and <a href="https://picocss.com">PicoCSS</a>.</li>
+<li>If you prefer a minimal style CSS stylesheet without classes, you might find <a href="https://andybrewer.github.io/mvp/">MVP.css</a> and <a href="https://mblode.github.io/marx/">Marx CSS</a> suitable for your needs. (PicoCSS also has a classless version available.)</li>
+</ul>
+<p><strong>Resets</strong>:</p>
+<ul>
+<li><a href="https://github.com/csstools/sanitize.css">Sanitize</a>, <a href="https://necolas.github.io/normalize.css/">Normalize</a>, and <a href="https://github.com/sindresorhus/modern-normalize">modern-normalize</a> are popular choices for normalizing and resetting browser styles.</li>
+<li>Multiple authors also share theirs CSS Reset stylesheetes, like <a href="https://andy-bell.co.uk/a-modern-css-reset/">Andy Bell</a>, <a href="https://www.joshwcomeau.com/css/custom-css-reset/">Josh W Comeau</a> and <a href="https://meyerweb.com/eric/tools/css/reset/">Eric A. Meyer</a>.</li>
+</ul>
+
     </main>
   </body>
   <script>
