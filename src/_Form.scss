@@ -30,6 +30,7 @@ select {
     padding: 0.6em 1em;
     width: 100%;
     font: inherit; // 1
+    color: inherit;
   }
 
   :where(&:focus) {
