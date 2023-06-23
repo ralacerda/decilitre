@@ -64,6 +64,7 @@ input[type=submit][disabled]) {
   border-radius: 0;
   display: block;
   padding: 1em 1.5em;
+  margin: 0;
   white-space: pre;
 }
 
@@ -94,6 +95,7 @@ select) {
   padding: 0.6em 1em;
   width: 100%;
   font: inherit;
+  color: inherit;
 }
 :where(input[type=date]:focus,
 input[type=datetime-local]:focus,
