@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.svg"/>
+    <title>{{ title }}</title>
+    <style>
+      {% include "index.css" %}
+      {% include "prism.css" %}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/decilitre.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/utilities.min.css" rel="stylesheet" />}
+
+  </head>
+{{ content | safe }}
+    <script>
+    {% include "script.js" %}
+    {% include "prism.js" %}
+  </script>
+</html>

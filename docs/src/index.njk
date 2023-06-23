@@ -1,20 +1,10 @@
+---
+layout: layout.njk
+title: Decilitre
+---
+
 {% set version %}0.6.2{% endset %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/jpg" href="favicon.svg"/>
-    <title>Decilitre</title>
-    <style>
-      {% include "index.css" %}
-      {% include "prism.css" %}
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/decilitre.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/decilitre@{{ version }}/dist/utilities.min.css" rel="stylesheet" />
-  </head>
   <body class="container">
     <header class="hero">
       <h1 class="button">Decilitre</h1>
@@ -40,8 +30,4 @@
       {% renderFile "./docs/src/_markdown/home/inspirations.md" %}
     </main>
   </body>
-  <script>
-    {% include "script.js" %}
-    {% include "prism.js" %}
-  </script>
-</html>
+
