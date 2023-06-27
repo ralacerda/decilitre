@@ -10,7 +10,7 @@
       <img src="https://img.shields.io/npm/l/decilitre?color=%234871c6" /> 
     </a>
     <a href="https://www.npmjs.com/package/decilitre">
-      <image src="https://img.shields.io/npm/l/decilitre?color=%234871c6" />
+      <image src="https://img.shields.io/npm/v/decilitre?color=%234871c6" />
     </a>
   </div>
   
